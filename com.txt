@@ -1,0 +1,13 @@
+para subir a dockerhub 
+    docker login 
+
+crear la imagen 
+    docker build -t usuarioDocker/nombreParaLaImagen:latest .
+
+
+renombrar la imagen creada 
+    docker tag nombreImagen usuario/nombre:v1 
+
+subir al repo 
+    docker push usuario/nombre:v1
+

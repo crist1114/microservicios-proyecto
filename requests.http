@@ -1,0 +1,20 @@
+###
+POST http://localhost:3200/api/crear/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 1152004,
+    "nombre": "Proyecto 1",
+    "descripcion" : "Proyecto de prueba para crear."
+}
+###
+GET http://localhost:3200/api/user/1152004
+
+###
+POST http://localhost:3200/api/asociar/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "idProyecto": 1152004,
+    "idUsuario": 1152004
+}
